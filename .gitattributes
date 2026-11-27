@@ -1,0 +1,20 @@
+# 让 bat 在任何平台上 checkout 出来都是 CRLF。
+# 纯 LF 的 .bat 在中文 Windows 上会让跨行 (...) 块崩溃，
+# 报一堆莫名其妙的括号错误 —— 详见 README 第七节。
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 其余文本统一 LF
+*.py    text eol=lf
+*.js    text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.ini   text eol=lf
+*.txt   text eol=lf
+
+*.png binary
+*.jpg binary
+*.pdf binary
