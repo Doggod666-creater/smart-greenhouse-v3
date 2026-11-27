@@ -1,0 +1,18 @@
+{
+  "_说明": "复制本文件为 config.json 后填写 uid。uid 是巴法云私钥，等同账号密码，不要提交到 GitHub。",
+  "_留空怎么办": "bemfa.enabled 保持 true 但 uid 为空时，服务照常运行，只是下发指令会返回 sent_mqtt:false。本地演示不需要它。",
+  "bemfa": {
+    "enabled": true,
+    "uid": "",
+    "topic": "esp32room",
+    "type": 1,
+    "poll_interval": 2.0,
+    "poll_enabled": false
+  },
+  "device": {
+    "water_min": 15.0,
+    "temp_min": 5.0,
+    "temp_max": 35.0,
+    "voltage_min": 10.5
+  }
+}

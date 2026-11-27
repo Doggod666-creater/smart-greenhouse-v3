@@ -1,0 +1,11 @@
+# 智感云联 V3.0 后端依赖
+#
+# 只有两个运行依赖。巴法云通信用的是标准库 urllib，
+# 不需要 paho-mqtt —— 这是刻意的：MQTT 同 clientId 只能一个连接，
+# 后端用 MQTT 连上去会把 ESP32 踢下线，所以走 HTTP 推送绕开。
+
+Flask>=3.0
+flask-cors>=4.0
+
+# 测试用（跑 pytest 才需要，不影响服务运行）
+pytest>=8.0
